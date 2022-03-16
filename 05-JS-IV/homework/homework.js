@@ -21,8 +21,8 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
-  objectO[property] = null;
-  return objecto;
+  objeto[property] = null;
+  return objeto;
 }
 
 function invocarMetodo(objeto, metodo) {
@@ -30,7 +30,7 @@ function invocarMetodo(objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
-  objecto[metodo]();
+  objeto[metodo]();
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
@@ -60,7 +60,7 @@ function nuevoUsuario(nombre, email, password) {
   let obj = {
     nombre: nombre.nombre,
     email: email,
-    password: password,
+    password: password
   }
     return obj;
 }
@@ -156,7 +156,7 @@ function agregarMetodoCalculoDescuento(producto) {
     return this.precio - (this.precio * this.porcentajeDeDescuento);
   }
   return producto;
-}
+};
 
 // No modificar nada debajo de esta línea
 // --------------------------------
